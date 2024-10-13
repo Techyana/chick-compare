@@ -7,99 +7,131 @@
     <meta name="description" content="Compare car, health, money, fibre internet and cellphone deals from top South African companies. Find the best quotes and benefits tailored for you.">
     <meta name="keywords" content="ChickCompare, insurance comparison, car insurance, health insurance, money, fibre internet, cellphone deals, South Africa">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header class="bg-primary text-center py-4">
-        <div class="center-slogan">
-            <a href="#" class="logo"><img src="https://see.fontimg.com/api/rf5/G3lEZ/NTEyNGQ1ODUyMjQzNDQ3MGI4M2Q3NzM4YTkwYmZkYzgub3Rm/Y2hpY2sgY29tcGFyZQ/st-noodles-grotesque.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" alt="Advertising fonts"></a>
-            <p>Peck Out the Best Deals</p>
+    <header class="text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3 align-items-center justify-content-between">
+            <div class="center-slogan">
+                <a href="#" class="navbar-brand logo"><img src="https://see.fontimg.com/api/rf5/G3lEZ/NTEyNGQ1ODUyMjQzNDQ3MGI4M2Q3NzM4YTkwYmZkYzgub3Rm/Y2hpY2sgY29tcGFyZQ/st-noodles-grotesque.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" alt="Advertising fonts"></a>
+                <p>Peck Out the Best Deals</p>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <div class="monsters-img">
+            <img src="./assets/img/cool-monsters.png" alt="Monsters" width="200">
+        </div>
+
+        <div class="lady-one-img">
+            <img src="./assets/img/lady-one.png" alt="Lady one" width="100">
         </div>
     </header>
-    <section id="hero" class="d-flex align-items-center justify-content-center" style="background: none;">
-        <video autoplay loop muted playsinline>
+
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <video autoplay loop muted id="hero-video">
             <source src="./assets/videos/29874-377759949_small.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
         <div class="container text-center hero-text">
-            <h2>"Compare Insurance and Financial Products Easily"</h2>
+            <h2>Compare Insurance and Financial Products Easily</h2>
             <br>
-            <p><i>Find the best deals from top South African companies</i></p>
+            <p>Find the best deals from top South African companies</p>
         </div>
+
         <div class="eyes-img">
             <img src="./assets/img/cartoon-eyes.png" alt="Cartoon eyes" width="125">
         </div>
+        
+        <div class="get-started-btn">
+            <button class="btn btn-primary btn-lg">Get Started</button>
+        </div>
     </section>
-    
     <div class="bg-img cover-layer">
-    <section id="services" class="container">
-        <h2 class="text-center mb-4">Our Services</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-car fa-2x mb-3"></i>
-                        <h5 class="card-title">Car Insurance</h5>
-                        <br>
-                        <p class="card-text">Compare quotes and benefits from leading car insurance providers.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-heartbeat fa-2x mb-3"></i>
-                        <h5 class="card-title">Health Insurance</h5>
-                        <br>
-                        <p class="card-text">Find the best health insurance plans for you and your family.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-wallet fa-2x mb-3"></i>
-                        <h5 class="card-title">Money</h5>
-                        <br>
-                        <p class="card-text">Discover financial products and services that suit your needs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-bg">
-                        <div class="card-body text-center">                 
-                            <i class="fas fa-wifi fa-2x mb-3"></i>
-                            <h5 class="card-title">Fibre Internet</h5>
+        <section id="services" class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-car fa-2x mb-3"></i>
+                            <h5 class="card-title">Car Insurance</h5>
                             <br>
-                            <p class="card-text">Compare fibre internet deals from top providers.</p>
+                            <p class="card-text">Compare quotes and benefits from leading car insurance providers.</p>
                         </div>
                     </div>
                 </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100">
-                    <div class="card-bg">
-                    <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt fa-2x mb-3"></i>
-                        <h5 class="card-title">Cellphone Deals</h5>
-                        <br>
-                        <p class="card-text">Find the best cellphone deals and plans.</p>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heartbeat fa-2x mb-3"></i>
+                            <h5 class="card-title">Health Insurance</h5>
+                            <br>
+                            <p class="card-text">Find the best health insurance plans for you and your family.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-wallet fa-2x mb-3"></i>
+                            <h5 class="card-title">Money</h5>
+                            <br>
+                            <p class="card-text">Discover financial products and services that suit your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-bg">
+                            <div class="card-body text-center">
+                                <i class="fas fa-wifi fa-2x mb-3"></i>
+                                <h5 class="card-title">Fibre Internet</h5>
+                                <br>
+                                <p class="card-text">Compare fibre internet deals from top providers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-bg">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt fa-2x mb-3"></i>
+                                <h5 class="card-title">Cellphone Deals</h5>
+                                <br>
+                                <p class="card-text">Find the best cellphone deals and plans.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
     <section id="testimonials" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">What Our Customers Say</h2>
-            <div id="testimonial-carousel" class="carousel slide
-             data-bs-ride="carousel">
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-center">
@@ -146,10 +178,11 @@
             </div>
         </div>
     </section>
-    <footer class="bg-primary text-white text-center py-4">
+    <footer class="text-white text-center py-4">
         <p>&copy; 2024 ChickCompare. All rights reserved.</p>
     </footer>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

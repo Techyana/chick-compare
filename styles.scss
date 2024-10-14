@@ -67,7 +67,25 @@ header {
     }
 }
 
+.service-col {
+    border-top: 10rem solid #ffffff; // Adjust color and thickness as needed
+
+    &:nth-child(3n+1) {
+        border-top: 0; // To avoid double borders at the start of new rows
+    }
+}
+
+
 @media (max-width: 768px) {
+
+    #services .row.no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #services .row.no-gutters .col-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     header {
         margin-top: 22rem;
@@ -179,6 +197,10 @@ header {
         .card {
             margin-bottom: 2rem;
         }
+
+        h2 {
+            font-family: "Lilita One", sans-serif;
+        }
     }
 
     
@@ -206,21 +228,29 @@ header {
 
 
 #services {
-    padding: 0rem 1rem;
+    padding: 0rem;
     margin: 0rem;
     color: #dbd7d7;
 
-    .card-bg-car {        
-        background: url("./assets/img/Screenshot\ 2024-10-13\ 175542.png") no-repeat;
+    .car-insurance {        
+        background: url("./assets/img/Screenshot\ 2024-10-14\ 184530.png") no-repeat;
         background-size: contain;
-        background-position: 0px;
+    }
 
+    .health-insurance {        
+        background: url("./assets/img/Screenshot\ 2024-10-14\ 191642.png") no-repeat;
+        background-size: contain;
+    }
+    
+    .money-insurance {        
+        background: url("./assets/img/Screenshot\ 2024-10-14\ 193259.png") no-repeat;
+        background-size: contain;
     }
 
     .card {
         transition: transform 0.3s ease-in-out;
         padding: 0rem;
-        border-radius: 12px;
+        border-radius: 0px;
 
         &:hover {
             transform: scale(1.05);
@@ -228,18 +258,28 @@ header {
 
         .card-bg {
             background-color: #222222d2;
-            padding: 1rem;
-            border-radius: 10px;
+            padding: 0rem;
+            border-radius: 0px;
             text-align: center;
             color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        
 
         .card-body {
             text-align: center;
-            background: linear-gradient(90deg, rgba(144, 90, 156, 0.452) 0%, #0a89bb1f 100%);
-            border-radius: 8px;
+            background: linear-gradient(90deg, #0a83bb65 10%,rgba(144, 90, 156, 0.199) 100%);
+            border-radius: 0px;
             font-family: "Lilita One", sans-serif;
+
+            .align-left-icon-h1 {
+                text-align: left;
+            }
+
+            .align-right-icon-h1{
+                text-align: right;
+            }
+
             i {
                 margin-bottom: 1rem;
             }

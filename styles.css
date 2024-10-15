@@ -60,7 +60,7 @@ header img {
 }
 
 .service-col {
-  border-top: 10rem solid #ffffff;
+  border-top: 0rem solid #ffffff;
 }
 .service-col:nth-child(3n+1) {
   border-top: 0;
@@ -169,6 +169,12 @@ header img {
   }
   #services h2 {
     font-family: "Lilita One", sans-serif;
+  }
+  #services .ad-img {
+    text-align: center;
+    margin: 2rem 0;
+    background: linear-gradient(90deg, rgba(144, 90, 156, 0.582) 10%, rgba(10, 131, 187, 0.7450980392) 100%);
+    padding: 1rem;
   }
   #hero::after {
     content: "";

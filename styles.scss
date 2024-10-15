@@ -68,7 +68,7 @@ header {
 }
 
 .service-col {
-    border-top: 10rem solid #ffffff; // Adjust color and thickness as needed
+    border-top: 0rem solid #ffffff; // Adjust color and thickness as needed
 
     &:nth-child(3n+1) {
         border-top: 0; // To avoid double borders at the start of new rows
@@ -200,6 +200,13 @@ header {
 
         h2 {
             font-family: "Lilita One", sans-serif;
+        }
+
+        .ad-img {
+            text-align: center;
+            margin:2rem 0;
+            background: linear-gradient(90deg, rgba(144, 90, 156, 0.582) 10%, #0a83bbbe 100%);
+            padding: 1rem;
         }
     }
 

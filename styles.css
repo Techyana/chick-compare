@@ -235,8 +235,43 @@ header img {
   #services .card .card-body .align-left-icon-h1 {
     text-align: left;
   }
+  #services .card .card-body .align-left-icon-h1 h5 {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5803921569) 5%, rgba(255, 255, 255, 0) 35%);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    border-left: 4px solid #905a9c;
+    color: rgba(255, 255, 255, 0.7176470588);
+  }
+  #services .card .card-body .align-left-icon-h1 p {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5803921569) 5%, rgba(255, 255, 255, 0) 35%);
+    padding: 0.2rem 0.5rem;
+    border-left: 4px solid #905a9c;
+    border-radius: 0.2rem;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.7176470588);
+  }
   #services .card .card-body .align-right-icon-h1 {
     text-align: right;
+  }
+  #services .card .card-body .align-right-icon-h1 h5 {
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.5803921569) 125%);
+    padding: 0.2rem 0.5rem;
+    border-right: 4px solid #0a89bb;
+    border-radius: 0.2rem;
+    color: rgba(255, 255, 255, 0.7176470588);
+  }
+  #services .card .card-body .align-right-icon-h1 p {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.5803921569) 125%);
+    padding: 0.2rem 0.5rem;
+    border-right: 4px solid #0a89bb;
+    border-radius: 0.2rem;
+    width: 75%;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.7176470588);
   }
   #services .card .card-body i {
     margin-bottom: 1rem;

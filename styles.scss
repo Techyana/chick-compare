@@ -283,8 +283,47 @@ header {
                 text-align: left;
             }
 
+            .align-left-icon-h1 h5 {
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                display: inline-block;
+                background: linear-gradient(90deg, #00000094 5%, #ffffff00 35%);
+                padding: 0.2rem 0.5rem;
+                border-radius: .2rem;
+                border-left: 4px solid #905a9c;                
+                color: #ffffffb7;
+            }
+
+            .align-left-icon-h1 p {
+                background: linear-gradient(90deg, #00000094 5%, #ffffff00 35%);
+                padding: 0.2rem 0.5rem;
+                border-left: 4px solid #905a9c;
+                border-radius: .2rem;
+                width: 80%;
+                color: #ffffffb7;
+            }
+
             .align-right-icon-h1{
                 text-align: right;
+            }
+
+            .align-right-icon-h1 h5 {
+                display: inline-block;
+                background: linear-gradient(90deg, #ffffff00 35%, #00000094 125%);
+                padding: 0.2rem 0.5rem;
+                border-right: 4px solid #0a89bb;
+                border-radius: .2rem;                
+                color: #ffffffb7;
+            }
+
+            .align-right-icon-h1 p {
+                background: linear-gradient(75deg, #ffffff00 35%, #00000094 125%);
+                padding: 0.2rem 0.5rem;
+                border-right: 4px solid #0a89bb;
+                border-radius: .2rem;
+                width: 75%;
+                margin-left: auto;
+                color: #ffffffb7;
             }
 
             i {

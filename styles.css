@@ -164,6 +164,10 @@ header img {
     width: 100%;
     z-index: 10;
   }
+  #services .header-services-img {
+    text-align: center;
+    margin: 2rem 0;
+  }
   #services .card {
     margin-bottom: 2rem;
   }
@@ -175,6 +179,30 @@ header img {
     margin: 2rem 0;
     background: linear-gradient(90deg, rgba(144, 90, 156, 0.582) 10%, rgba(10, 131, 187, 0.7450980392) 100%);
     padding: 1rem;
+  }
+  #services .call-to-action {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background: linear-gradient(90deg, rgba(70, 109, 91, 0.431372549) 10%, rgba(10, 131, 187, 0.137254902) 100%);
+    padding: 1rem;
+    border: 2px solid #905a9c;
+    text-align: center;
+    margin: 2rem 1rem;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+  }
+  #services .call-to-action a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    border: 2px solid #0a89bb;
+  }
+  #services .call-to-action a:hover {
+    color: #905a9c;
   }
   #hero::after {
     content: "";

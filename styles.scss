@@ -194,6 +194,11 @@ header {
 
 
     #services {
+        .header-services-img {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
         .card {
             margin-bottom: 2rem;
         }
@@ -207,6 +212,33 @@ header {
             margin:2rem 0;
             background: linear-gradient(90deg, rgba(144, 90, 156, 0.582) 10%, #0a83bbbe 100%);
             padding: 1rem;
+        }
+
+        .call-to-action {
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            background: linear-gradient(90deg, #466d5b6e 10%, #0a83bb23 100%);
+            padding: 1rem;
+            border: 2px solid #905a9c;
+            text-align: center;
+            margin: 2rem 1rem;
+            border-radius: 15px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom: none;
+
+            a {
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.2rem;
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+                border: 2px solid #0a89bb;
+
+                &:hover {
+                    color: #905a9c;
+                }
+            }
         }
     }
 

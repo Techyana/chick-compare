@@ -170,6 +170,7 @@ header img {
   }
   #services .card {
     margin-bottom: 2rem;
+    border-radius: 15px;
   }
   #services h2 {
     font-family: "Lilita One", sans-serif;
@@ -183,7 +184,7 @@ header img {
   #services .call-to-action {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    background: linear-gradient(90deg, rgba(70, 109, 91, 0.431372549) 10%, rgba(10, 131, 187, 0.137254902) 100%);
+    background: linear-gradient(90deg, #235b71 10%, #235b71 100%);
     padding: 1rem;
     border: 2px solid #905a9c;
     text-align: center;
@@ -192,10 +193,11 @@ header img {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom: none;
+    font-family: "Lilita One", sans-serif;
   }
   #services .call-to-action a {
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -219,16 +221,42 @@ header img {
   .cover-layer {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 249, 249, 0.1) 100%);
+    background: linear-gradient(180deg, #373737 0%, #0a89bb 100%);
   }
   #services {
     padding: 0rem;
     margin: 0rem;
     color: #dbd7d7;
   }
+  #services .service-col {
+    border-radius: 15px;
+  }
+  #services .cover-service-item {
+    margin: 0.5rem;
+    border-radius: 15px;
+    background: #fff;
+  }
+  #services .align-right-icon-top {
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    border-top-left-radius: 15px;
+    color: rgba(0, 0, 0, 0.7803921569);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8470588235) 20%, rgba(255, 255, 255, 0) 65%);
+  }
+  #services .align-left-icon-top {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: left;
+    margin-left: 0rem;
+    font-size: 1.2rem;
+    border-top-left-radius: 15px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0.8431372549) 85%);
+  }
   #services .car-insurance {
     background: url("./assets/img/Screenshot 2024-10-14 184530.png") no-repeat;
     background-size: contain;
+    border-radius: 15px;
   }
   #services .health-insurance {
     background: url("./assets/img/Screenshot 2024-10-14 191642.png") no-repeat;
@@ -238,32 +266,48 @@ header img {
     background: url("./assets/img/Screenshot 2024-10-14 193259.png") no-repeat;
     background-size: contain;
   }
+  #services .fibre-deals {
+    background: url("./assets/img/Screenshot 2024-10-17 114110.png") no-repeat;
+    background-size: contain;
+  }
+  #services .phone-deals {
+    background: url("./assets/img/Screenshot 2024-10-17 101044.png") no-repeat;
+    background-size: contain;
+  }
   #services .card {
     transition: transform 0.3s ease-in-out;
     padding: 0rem;
-    border-radius: 0px;
+    border-radius: 15px;
   }
   #services .card:hover {
     transform: scale(1.05);
   }
-  #services .card .card-bg {
-    background-color: rgba(34, 34, 34, 0.8235294118);
-    padding: 0rem;
-    border-radius: 0px;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  #services .card .carousel-item img {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   #services .card .card-body {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(10, 131, 187, 0.3960784314) 10%, rgba(144, 90, 156, 0.199) 100%);
-    border-radius: 0px;
+    position: absolute;
+    top: 30%;
+    left: -12%;
+    width: 100%;
+    border-radius: 15px;
     font-family: "Lilita One", sans-serif;
   }
   #services .card .card-body .align-left-icon-h1 {
     text-align: left;
   }
+  #services .card .card-body .align-left-icon-h1 .hide-element {
+    display: inline-block;
+    opacity: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.5803921569) 125%);
+    padding: 0.2rem 0.5rem;
+    border-right: 4px solid #0a89bb;
+    border-radius: 0.2rem;
+    color: #ffffff;
+  }
   #services .card .card-body .align-left-icon-h1 h5 {
+    opacity: 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: inline-block;
@@ -272,6 +316,7 @@ header img {
     border-radius: 0.2rem;
     border-left: 4px solid #905a9c;
     color: rgba(255, 255, 255, 0.7176470588);
+    font-size: 1.2rem;
   }
   #services .card .card-body .align-left-icon-h1 p {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.5803921569) 5%, rgba(255, 255, 255, 0) 35%);
@@ -284,22 +329,34 @@ header img {
   #services .card .card-body .align-right-icon-h1 {
     text-align: right;
   }
-  #services .card .card-body .align-right-icon-h1 h5 {
+  #services .card .card-body .align-right-icon-h1 .hide-element {
     display: inline-block;
+    opacity: 0;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.5803921569) 125%);
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0rem;
     border-right: 4px solid #0a89bb;
     border-radius: 0.2rem;
     color: rgba(255, 255, 255, 0.7176470588);
   }
   #services .card .card-body .align-right-icon-h1 p {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     background: linear-gradient(75deg, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, 0.5803921569) 125%);
     padding: 0.2rem 0.5rem;
     border-right: 4px solid #0a89bb;
     border-radius: 0.2rem;
     width: 75%;
     margin-left: auto;
-    color: rgba(255, 255, 255, 0.7176470588);
+    color: #ffffff;
+  }
+  #services .card .card-body .align-right-icon-h1 h4 {
+    padding: 0.2rem 0.5rem;
+    border-right: 4px solid #0a89bb;
+    border-radius: 0.2rem;
+    width: 75%;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.5803921569);
+    font-size: smaller;
   }
   #services .card .card-body i {
     margin-bottom: 1rem;

@@ -236,7 +236,6 @@ header img {
     background: #ffffff;
   }
   #services .cover-service-item {
-    margin: 0rem;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -247,33 +246,48 @@ header img {
     border-radius: 15px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-    background: #c9eefd;
+    background: url("./assets/img/Sanlam-Office.jpg") no-repeat;
+    background-size: cover;
     width: 90%;
-    height: 95vh;
+    height: 97vh;
   }
   #services .top-brands h4 {
     text-align: left;
   }
   #services .top-brands .text-section {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     margin: 0.5rem;
+    margin-top: 15rem;
+    opacity: 0.9;
     padding: 0.2rem 0.5rem;
-    background: rgba(255, 255, 255, 0.9098039216);
+    background: rgba(255, 255, 255, 0.6235294118);
     border-radius: 15px;
   }
   #services .top-brands .text-section p {
     text-align: justify;
+    font-weight: 500;
+  }
+  #services .top-brands a {
+    border: 2px solid #0a89bb;
+  }
+  #services .top-brands a:hover {
+    color: #905a9c;
   }
   #services .align-right-icon-top {
     text-align: center;
     font-size: 1rem;
-    margin: 0 0.1rem;
+    margin: 1rem 0.1rem;
     border-top-left-radius: 15px;
     color: rgba(0, 0, 0, 0.7803921569);
   }
   #services .align-right-icon-top .fas {
     padding: 0.5rem 1rem;
-    border: solid 2px #0a89bb;
-    border-radius: 15px;
+    border-left: solid 2px rgba(0, 0, 0, 0.2039215686);
+    border-radius: 0px;
+  }
+  #services .align-right-icon-top .first-icon {
+    border-left: none;
   }
   #services .align-left-icon-top {
     backdrop-filter: blur(5px);

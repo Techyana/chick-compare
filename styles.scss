@@ -284,7 +284,6 @@ header {
     }
 
     .cover-service-item {
-        margin: 0rem;
         border-radius: 15px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -296,30 +295,44 @@ header {
         border-radius: 15px;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
-        background: #c9eefd;
+        background: url("./assets/img/Sanlam-Office.jpg") no-repeat;
+        background-size: cover;
         width: 90%;
-        height: 95vh;
+        height: 97vh;
 
         h4 {
             text-align: left;
         }
 
         .text-section {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             margin: .5rem;
+            margin-top: 15rem;
+            opacity: 0.9;
             padding: .2rem .5rem;
-            background: #ffffffe8;
+            background: #ffffff9f;
             border-radius: 15px;
 
             p {
                 text-align: justify;
+                font-weight: 500;
             }
+        }
+
+        a {
+            border: 2px solid #0a89bb;
+
+                &:hover {
+                    color: #905a9c;
+                }
         }
     }
 
     .align-right-icon-top {
         text-align: center;
         font-size: 1rem;
-        margin: 0 .1rem;
+        margin: 1rem .1rem;
         border-top-left-radius: 15px;
         color: #000000c7;
         
@@ -327,8 +340,12 @@ header {
 
     .align-right-icon-top .fas {
         padding: .5rem 1rem;
-        border: solid 2px #0a89bb;
-        border-radius: 15px;
+        border-left: solid 2px #00000034;
+        border-radius: 0px;
+    }
+
+    .align-right-icon-top .first-icon {
+        border-left: none;
     }
 
 

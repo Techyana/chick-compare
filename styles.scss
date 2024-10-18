@@ -204,7 +204,11 @@ header {
             border-radius: 15px;
         }
 
-        h2 {
+        h3 {
+            padding-top: 1rem;
+        }
+
+        h2, h3 {
             font-family: "Lilita One", sans-serif;
         }
 
@@ -218,7 +222,7 @@ header {
         .call-to-action {
             backdrop-filter: blur(2px);
             -webkit-backdrop-filter: blur(2px);
-            background: linear-gradient(90deg, #235b71 10%, #235b71 100%);
+            background: linear-gradient(90deg, #295161 10%, #295161 100%);
             padding: 1rem;
             border: 2px solid #905a9c;
             text-align: center;
@@ -275,44 +279,82 @@ header {
 
     .service-col {
         border-radius: 15px;
-
+        background: #ffffff;
         
     }
 
     .cover-service-item {
-        margin: .5rem;
+        margin: 0rem;
         border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
         background: #fff;
     }
 
+    .top-brands {
+        margin-left: 2.2rem;
+        border-radius: 15px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        background: #c9eefd;
+        width: 90%;
+        height: 95vh;
+
+        h4 {
+            text-align: left;
+        }
+
+        .text-section {
+            margin: .5rem;
+            padding: .2rem .5rem;
+            background: #ffffffe8;
+            border-radius: 15px;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
     .align-right-icon-top {
-        text-align: right;
-        margin-right: 1rem;
-        font-size: 1.2rem;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 .1rem;
         border-top-left-radius: 15px;
         color: #000000c7;
-        background: linear-gradient(45deg, #ffffffd8 20%, #ffffff00 65%);
+        
     }
+
+    .align-right-icon-top .fas {
+        padding: .5rem 1rem;
+        border: solid 2px #0a89bb;
+        border-radius: 15px;
+    }
+
 
     .align-left-icon-top {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         text-align: left;
         margin-left: 0rem;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
         font-size: 1.2rem;
-        border-top-left-radius: 15px;
-        background: linear-gradient(90deg, #ffffff00 5%, #ffffffd7 85%);
+        width: 90%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: linear-gradient(90deg, #24596e 5%, #24596e 85%);
     }
 
     .car-insurance {        
         background: url("./assets/img/Screenshot\ 2024-10-14\ 184530.png") no-repeat;
         background-size: contain;
         border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
-    .health-insurance {        
-        background: url("./assets/img/Screenshot\ 2024-10-14\ 191642.png") no-repeat;
-        background-size: contain;
+    .health-insurance {
     }
     
     .money-insurance {        
@@ -336,7 +378,8 @@ header {
         transition: transform 0.3s ease-in-out;
         padding: 0rem;
         border-radius: 15px;
-
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     
 
         &:hover {
@@ -344,10 +387,7 @@ header {
         }
 
         
-        .carousel-item img {
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-        }
+      
 
         .card-body {
             position: absolute;

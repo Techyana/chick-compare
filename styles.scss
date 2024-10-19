@@ -222,7 +222,7 @@ header {
         .call-to-action {
             backdrop-filter: blur(2px);
             -webkit-backdrop-filter: blur(2px);
-            background: linear-gradient(90deg, #295161 10%, #295161 100%);
+            background: linear-gradient(90deg, #2c4c58 10%, #2c4c58 100%);
             padding: 1rem;
             border: 2px solid #905a9c;
             text-align: center;
@@ -290,7 +290,7 @@ header {
         background: #fff;
     }
 
-    .top-brands {
+    .top-brands-sanlam {
         margin-left: 2.2rem;
         border-radius: 15px;
         border-bottom-right-radius: 0px;
@@ -298,7 +298,7 @@ header {
         background: url("./assets/img/Sanlam-Office.jpg") no-repeat;
         background-size: cover;
         width: 90%;
-        height: 97vh;
+        height: 50vh;
 
         h4 {
             text-align: left;
@@ -308,26 +308,133 @@ header {
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
             margin: .5rem;
-            margin-top: 15rem;
+            margin-top: 11rem;
             opacity: 0.9;
             padding: .2rem .5rem;
-            background: #ffffff9f;
+            background: linear-gradient(180deg, #0000009c 45%, #ffffff8a 135%);
+            border: solid 2px #ffffff86;
             border-radius: 15px;
-
+            
             p {
-                text-align: justify;
+                font-size: medium;
+                text-align: center;
                 font-weight: 500;
+                font-size: .9rem;
+                color: #fff;
+                
             }
         }
 
         a {
             border: 2px solid #0a89bb;
+            font-size: .8rem;
 
                 &:hover {
                     color: #905a9c;
                 }
         }
+
+        
     }
+
+
+
+    .top-brands-afrihost {
+        margin-right: 5rem;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        background: url("./assets/img/afrihost-office.jpg") no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 50vh;
+
+        h4 {
+            text-align: left;
+        }
+
+        .text-section {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            margin: .5rem;
+            margin-top: 11rem;
+            opacity: 0.9;
+            padding: .2rem .5rem;
+            background: linear-gradient(180deg, #0000009c 45%, #ffffff8a 135%);
+            border: solid 2px #ffffff86;
+            border-radius: 15px;
+            
+            p {
+                font-size: medium;
+                text-align: center;
+                font-weight: 500;
+                font-size: .9rem;
+                color: #fff;
+                
+            }
+        }
+
+        a {
+            border: 2px solid #0a89bb;
+            font-size: .8rem;
+
+                &:hover {
+                    color: #905a9c;
+                }
+        }
+
+        
+    }
+
+    .top-brands-mtn {
+        margin-left: 2.2rem;
+        border-radius: 15px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        background: url("./assets/img/MTN-Offices.jpg") no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 50vh;
+
+        h4 {
+            text-align: left;
+        }
+
+        .text-section {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            margin: .5rem;
+            margin-top: 11rem;
+            opacity: 0.9;
+            padding: .2rem .5rem;
+            background: linear-gradient(180deg, #0000009c 45%, #ffffff8a 135%);
+            border: solid 2px #ffffff86;
+            border-radius: 15px;
+            
+            p {
+                font-size: medium;
+                text-align: center;
+                font-weight: 500;
+                font-size: .9rem;
+                color: #fff;
+                
+            }
+        }
+
+        a {
+            border: 2px solid #0a89bb;
+            font-size: .8rem;
+
+                &:hover {
+                    color: #905a9c;
+                }
+        }
+
+        
+    }
+
+
+
 
     .align-right-icon-top {
         text-align: center;
@@ -397,6 +504,7 @@ header {
         border-radius: 15px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        
     
 
         &:hover {

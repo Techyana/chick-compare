@@ -609,6 +609,13 @@ header {
         margin: 0 auto;
         max-width: 600px;
         padding: 1rem;
+
+        .testimonial-card-img {
+            position: absolute;
+            width: 60%;
+            top: 36%;
+            left: 50%;
+        }
     }
 }
 

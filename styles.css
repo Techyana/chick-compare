@@ -496,6 +496,12 @@ header img {
     max-width: 600px;
     padding: 1rem;
   }
+  #testimonials .testimonial-card .testimonial-card-img {
+    position: absolute;
+    width: 60%;
+    top: 36%;
+    left: 50%;
+  }
   footer {
     background-color: #222222;
     color: #fff;

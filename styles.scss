@@ -60,8 +60,8 @@ header {
         left: 0;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
         background: rgba(255, 255, 255, 0.5);
         z-index: 2;
     }
@@ -156,9 +156,9 @@ header {
         font-weight: 300;
         font-style: normal;
     }
-    #hero .hero-text {
-        backdrop-filter: blur(2px);
+    #hero .hero-text {        
         -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
         background: linear-gradient(90deg, rgb(144, 90, 156) 0%, #0a89bb99 100%);
         border-radius: 15px;
         padding: 5px;
@@ -220,8 +220,8 @@ header {
         }
 
         .call-to-action {
-            backdrop-filter: blur(2px);
             -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
             background: linear-gradient(90deg, #2c4c58 10%, #2c4c58 100%);
             padding: 1rem;
             border: 2px solid #905a9c;
@@ -305,8 +305,8 @@ header {
         }
 
         .text-section {
-            backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
             margin: .5rem;
             margin-top: 11rem;
             opacity: 0.9;
@@ -354,8 +354,8 @@ header {
         }
 
         .text-section {
-            backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
             margin: .5rem;
             margin-top: 11rem;
             opacity: 0.9;
@@ -401,8 +401,8 @@ header {
         }
 
         .text-section {
-            backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
             margin: .5rem;
             margin-top: 11rem;
             opacity: 0.9;
@@ -457,8 +457,8 @@ header {
 
 
     .align-left-icon-top {
-        backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         text-align: left;
         margin-left: 0rem;
         padding-left: 1rem;
@@ -479,6 +479,11 @@ header {
     }
 
     .health-insurance {
+        background: url("./assets/img/Screenshot\ 2024-10-14\ 185059.png") no-repeat;
+        background-size: contain;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
     
     .money-insurance {        
@@ -538,8 +543,8 @@ header {
 
             .align-left-icon-h1 h5 {
                 opacity: 0;
-                backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
                 display: inline-block;
                 background: linear-gradient(90deg, #00000094 5%, #ffffff00 35%);
                 padding: 0.2rem 0.5rem;
@@ -573,8 +578,8 @@ header {
             }
 
             .align-right-icon-h1 p {
-                backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
                 background: linear-gradient(75deg, #ffffff00 35%, #00000094 125%);
                 padding: 0.2rem 0.5rem;
                 border-right: 4px solid #0a89bb;
